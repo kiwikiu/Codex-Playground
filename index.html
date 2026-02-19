@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tastatur-Tetris</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="game-area">
+        <canvas id="game" width="300" height="600" aria-label="Tetris Spielfeld"></canvas>
+      </section>
+      <aside class="hud">
+        <h1>Tetris</h1>
+        <p>Steuerung:</p>
+        <ul>
+          <li>⬅️/➡️ bewegen</li>
+          <li>⬆️ drehen</li>
+          <li>⬇️ schneller fallen</li>
+          <li>Leertaste: Sofort fallen</li>
+          <li>P: Pause</li>
+        </ul>
+        <p>Punkte: <strong id="score">0</strong></p>
+        <p>Level: <strong id="level">1</strong></p>
+        <button id="restart" type="button">Neu starten</button>
+      </aside>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
